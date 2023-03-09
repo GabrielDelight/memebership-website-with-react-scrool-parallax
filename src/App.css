@@ -31,6 +31,8 @@ header nav li {
   width: 50px;
   height: 50px;
   /* border-radius: 50%; */
+  border-radius: 10px;
+
 }
 
 img {
@@ -50,6 +52,8 @@ img {
 
 .absolute-text h1 {
   font-size: 5rem;
+  background-color: rgba(100, 148, 237, 0.644);
+  
 }
 
 .bg-container img {
@@ -72,17 +76,23 @@ img {
   width: 100%;
 }
 
-.subscribe-section {
+.subscribe {
   width: 80%;
   display: block;
   margin: auto;
   text-align: center;
-  background-color: tan;
+  background-color: cornflowerblue;
   padding: 20px;
 }
 
-.subscribe-section button {
+.subscribe button {
   padding: 10px;
   outline: none;
   cursor: pointer;
+}
+
+.subscribe input {
+  padding: 10px;
+  outline: none;
+  border: none;
 }

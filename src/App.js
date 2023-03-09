@@ -11,6 +11,14 @@ const App = () => {
     rotateY: [0, 360],
   });
 
+  const parallaxRotateY2 = useParallax({
+    rotateY: [0, 360],
+  });
+
+  const parallaxRotateY3 = useParallax({
+    rotateY: [0, 360],
+  });
+
   const parallaxEasing = useParallax({
     easing: "easeOutQuad",
     translateX: [-340, 100],
@@ -27,62 +35,58 @@ const App = () => {
       <header>
 
         <div className="logo">
-          <img src="https://cdn-1.webcatalog.io/catalog/openreplay/openreplay-icon-filled-256.png?v=1675594994709" />
+          <img src="https://img.freepik.com/free-vector/branding-identity-corporate-vector-logo-m-design_460848-10168.jpg" />
         </div>
         <nav>
           <li>Home</li>
           <li>About</li>
-          <li>Contact</li>
+          <li>Team</li>
           <li>Services</li>
-          <li>Register</li>
+          <li>Learn more</li>
         </nav>
       </header>
       <section className="bg-container">
         <img
           ref={parallaxRotateY.ref}
-          src="https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         />
         <div className="absolute-text">
-          <h1 ref={parallaxEasing.ref}>OPEN REPLAY</h1>
-          <h2 ref={parallaxEasingLeft.ref}>SESSION REPLAY</h2>
+          <h1 ref={parallaxEasing.ref}>MEMBERSHIP WEBSITE</h1>
+          <h2 ref={parallaxEasingLeft.ref}>For members only non profitable</h2>
         </div>
       </section>
       <br />
 
       <section className="card-container" ref={scaleCParallax.ref}>
         <div className="card">
-          <img src="https://images.pexels.com/photos/1181243/pexels-photo-1181243.jpeg?auto=compress&cs=tinysrgb&w=800" />
-          <div>
-            <h2>Programming</h2>
-            <p>
-              Coding encourages students to think creatively and outside the box
-              in order to solve problems. They can use their imagination to
-              create new programs, games, or applications that will benefit
-              society.
-            </p>
-          </div>
+          <img src="https://images.pexels.com/photos/2422294/pexels-photo-2422294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+          
         </div>
 
         <div className="card">
-          <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-          <div>
-            <h2>UI and UX design</h2>
-            <p>
-              Critical thinking and creative problem-solving are required for UI
-              and UX design. Students can use their imagination to create
-              unique, aesthetically pleasing designs that captivate users..
-            </p>
-          </div>
+          <img src="https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+         
+        </div>
+      </section>
+      
+      <br />
+      <br />
+      <section className="card-container">
+        <div className="card" ref={parallaxRotateY2.ref}>
+          <img src="https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=800" />
+        </div>
+
+        <div ref={parallaxRotateY3.ref} className="card">
+          <img src="https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
         </div>
       </section>
       <br />
-      <br />
-      <br />
       
-      <section className="subscribe-section">
-        <p>Kinfly create an account to get started</p>
+      <section className="subscribe">
+        <h1>Subscribe to our news letter</h1>
         <br />
-        <button>Create an account</button>
+        <input type="email" placeholder="youremail@gmail.com" />
+        <button>Subscribe</button>
       </section>
     </div>
   );
